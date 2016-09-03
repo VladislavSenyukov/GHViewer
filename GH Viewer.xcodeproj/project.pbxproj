@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D483E1481D7B628500FCD614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E1471D7B628500FCD614 /* AppDelegate.swift */; };
-		D483E14A1D7B628500FCD614 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E1491D7B628500FCD614 /* ViewController.swift */; };
-		D483E14D1D7B628500FCD614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D483E14B1D7B628500FCD614 /* Main.storyboard */; };
-		D483E14F1D7B628500FCD614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D483E14E1D7B628500FCD614 /* Assets.xcassets */; };
-		D483E1521D7B628500FCD614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D483E1501D7B628500FCD614 /* LaunchScreen.storyboard */; };
+		D483E1771D7B651700FCD614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E16D1D7B651700FCD614 /* AppDelegate.swift */; };
+		D483E1781D7B651700FCD614 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E1711D7B651700FCD614 /* ViewController.swift */; };
+		D483E1791D7B651700FCD614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D483E1731D7B651700FCD614 /* Assets.xcassets */; };
+		D483E17B1D7B651700FCD614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D483E1751D7B651700FCD614 /* LaunchScreen.storyboard */; };
+		D483E17C1D7B651700FCD614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D483E1761D7B651700FCD614 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D483E1441D7B628500FCD614 /* GH Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GH Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D483E1471D7B628500FCD614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D483E1491D7B628500FCD614 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D483E14C1D7B628500FCD614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D483E14E1D7B628500FCD614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D483E1511D7B628500FCD614 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D483E1531D7B628500FCD614 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D483E16D1D7B651700FCD614 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D483E1711D7B651700FCD614 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D483E1731D7B651700FCD614 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D483E1741D7B651700FCD614 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D483E1751D7B651700FCD614 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D483E1761D7B651700FCD614 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,15 +54,55 @@
 		D483E1461D7B628500FCD614 /* GH Viewer */ = {
 			isa = PBXGroup;
 			children = (
-				D483E1471D7B628500FCD614 /* AppDelegate.swift */,
-				D483E1491D7B628500FCD614 /* ViewController.swift */,
-				D483E14B1D7B628500FCD614 /* Main.storyboard */,
-				D483E14E1D7B628500FCD614 /* Assets.xcassets */,
-				D483E1501D7B628500FCD614 /* LaunchScreen.storyboard */,
-				D483E1531D7B628500FCD614 /* Info.plist */,
+				D483E16C1D7B651700FCD614 /* Classes */,
+				D483E1721D7B651700FCD614 /* Resources */,
 			);
 			path = "GH Viewer";
 			sourceTree = "<group>";
+		};
+		D483E16C1D7B651700FCD614 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D483E16D1D7B651700FCD614 /* AppDelegate.swift */,
+				D483E16E1D7B651700FCD614 /* Business */,
+				D483E16F1D7B651700FCD614 /* Model */,
+				D483E1701D7B651700FCD614 /* UI */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		D483E16E1D7B651700FCD614 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		D483E16F1D7B651700FCD614 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D483E1701D7B651700FCD614 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D483E1711D7B651700FCD614 /* ViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D483E1721D7B651700FCD614 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D483E1731D7B651700FCD614 /* Assets.xcassets */,
+				D483E1741D7B651700FCD614 /* Info.plist */,
+				D483E1751D7B651700FCD614 /* LaunchScreen.storyboard */,
+				D483E1761D7B651700FCD614 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -96,6 +136,7 @@
 				TargetAttributes = {
 					D483E1431D7B628500FCD614 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = ZVHW8QUG2S;
 					};
 				};
 			};
@@ -122,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D483E1521D7B628500FCD614 /* LaunchScreen.storyboard in Resources */,
-				D483E14F1D7B628500FCD614 /* Assets.xcassets in Resources */,
-				D483E14D1D7B628500FCD614 /* Main.storyboard in Resources */,
+				D483E17B1D7B651700FCD614 /* LaunchScreen.storyboard in Resources */,
+				D483E1791D7B651700FCD614 /* Assets.xcassets in Resources */,
+				D483E17C1D7B651700FCD614 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,31 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D483E14A1D7B628500FCD614 /* ViewController.swift in Sources */,
-				D483E1481D7B628500FCD614 /* AppDelegate.swift in Sources */,
+				D483E1781D7B651700FCD614 /* ViewController.swift in Sources */,
+				D483E1771D7B651700FCD614 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D483E14B1D7B628500FCD614 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D483E14C1D7B628500FCD614 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D483E1501D7B628500FCD614 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D483E1511D7B628500FCD614 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D483E1541D7B628500FCD614 /* Debug */ = {
@@ -249,10 +271,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "GH Viewer/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = $SRCROOT/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ruckef.GH-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +285,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "GH Viewer/Info.plist";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = $SRCROOT/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ruckef.GH-Viewer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
