@@ -12,8 +12,6 @@
 		D483E1791D7B651700FCD614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D483E1731D7B651700FCD614 /* Assets.xcassets */; };
 		D483E17B1D7B651700FCD614 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D483E1751D7B651700FCD614 /* LaunchScreen.storyboard */; };
 		D483E17C1D7B651700FCD614 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D483E1761D7B651700FCD614 /* Main.storyboard */; };
-		D483E17E1D7B698500FCD614 /* GHFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E17D1D7B698500FCD614 /* GHFacade.swift */; };
-		D483E1801D7B69AE00FCD614 /* GHNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E17F1D7B69AE00FCD614 /* GHNetworkManager.swift */; };
 		D483E1821D7B6A7300FCD614 /* GHUniqueObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E1811D7B6A7300FCD614 /* GHUniqueObject.swift */; };
 		D483E1841D7B6B7200FCD614 /* GHUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E1831D7B6B7200FCD614 /* GHUser.swift */; };
 		D483E1861D7B6D5000FCD614 /* GHKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E1851D7B6D5000FCD614 /* GHKeys.swift */; };
@@ -30,8 +28,6 @@
 		D483E1741D7B651700FCD614 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D483E1751D7B651700FCD614 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D483E1761D7B651700FCD614 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		D483E17D1D7B698500FCD614 /* GHFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHFacade.swift; sourceTree = "<group>"; };
-		D483E17F1D7B69AE00FCD614 /* GHNetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHNetworkManager.swift; sourceTree = "<group>"; };
 		D483E1811D7B6A7300FCD614 /* GHUniqueObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHUniqueObject.swift; sourceTree = "<group>"; };
 		D483E1831D7B6B7200FCD614 /* GHUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHUser.swift; sourceTree = "<group>"; };
 		D483E1851D7B6D5000FCD614 /* GHKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHKeys.swift; sourceTree = "<group>"; };
@@ -104,8 +100,6 @@
 		D483E16E1D7B651700FCD614 /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				D483E17D1D7B698500FCD614 /* GHFacade.swift */,
-				D483E17F1D7B69AE00FCD614 /* GHNetworkManager.swift */,
 				D483E18A1D7B9B6600FCD614 /* GHPageCollection.swift */,
 			);
 			path = Business;
@@ -272,10 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D483E17E1D7B698500FCD614 /* GHFacade.swift in Sources */,
 				D483E18B1D7B9B6600FCD614 /* GHPageCollection.swift in Sources */,
 				D483E1841D7B6B7200FCD614 /* GHUser.swift in Sources */,
-				D483E1801D7B69AE00FCD614 /* GHNetworkManager.swift in Sources */,
 				D483E1821D7B6A7300FCD614 /* GHUniqueObject.swift in Sources */,
 				D483E1781D7B651700FCD614 /* GHUsersViewController.swift in Sources */,
 				D483E1771D7B651700FCD614 /* AppDelegate.swift in Sources */,

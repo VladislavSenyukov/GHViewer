@@ -8,12 +8,20 @@
 
 import UIKit
 
-class GHUsersViewController: UIViewController {
+class GHUsersViewController: UIViewController, GHPageCollectionDelegate {
 
+    let collection = GHGitUserPageCollection(url: "https://api.github.com/users")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let collection = GHPageCollection<GHUser>()
+
+        collection.delegate = self
     }
 
+    func pageCollectionDidLoadPage() {
+        print(collection.objects.count)
+        collection.load()
+    }
+    
 }
 

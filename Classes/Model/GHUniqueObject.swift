@@ -15,10 +15,10 @@ class GHUniqueObject: GHDeserializable {
     
     required init?(jsonDic: [String : AnyObject]) {
         guard
-            let id = jsonDic[GHKeys.id.string] as? String
-            else {
+            let id = jsonDic[GHKeys.id.string] as? NSNumber
+        else {
                 return nil
         }
-        self.id = id
+        self.id = id.stringValue
     }
 }
