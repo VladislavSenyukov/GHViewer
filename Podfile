@@ -2,5 +2,6 @@
 # platform :ios, '9.0'
 
 target 'GH Viewer' do
-  pod 'AFNetworking'
+	use_frameworks!
+  	pod 'AFNetworking'
 end
