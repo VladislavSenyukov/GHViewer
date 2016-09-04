@@ -27,4 +27,9 @@ class GHUser: GHUniqueObject {
         self.followersUrl = followersUrl
         super.init(jsonDic: jsonDic)
     }
+    
+    var cellData: GHUserCellData {
+        let data = GHUserCellData(login: login, profileUrl: profileUrl, pictureUrl: profilePictureUrl)
+        return data
+    }
 }

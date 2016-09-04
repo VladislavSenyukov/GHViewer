@@ -17,6 +17,7 @@
 		D483E1861D7B6D5000FCD614 /* GHKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E1851D7B6D5000FCD614 /* GHKeys.swift */; };
 		D483E1891D7B7F4D00FCD614 /* Pods_GH_Viewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D483E1881D7B7F4D00FCD614 /* Pods_GH_Viewer.framework */; };
 		D483E18B1D7B9B6600FCD614 /* GHPageCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E18A1D7B9B6600FCD614 /* GHPageCollection.swift */; };
+		D483E18D1D7CC57100FCD614 /* GHUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E18C1D7CC57100FCD614 /* GHUserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D483E1871D7B6E7D00FCD614 /* GHViewer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHViewer-Bridging-Header.h"; sourceTree = "<group>"; };
 		D483E1881D7B7F4D00FCD614 /* Pods_GH_Viewer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_GH_Viewer.framework; path = "../../../Library/Developer/Xcode/DerivedData/GH_Viewer-afyuwkkumxlolxdlrxfhkaebmeuk/Build/Products/Debug-iphonesimulator/Pods_GH_Viewer.framework"; sourceTree = "<group>"; };
 		D483E18A1D7B9B6600FCD614 /* GHPageCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHPageCollection.swift; sourceTree = "<group>"; };
+		D483E18C1D7CC57100FCD614 /* GHUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHUserTableViewCell.swift; sourceTree = "<group>"; };
 		FB254CE3A2BE073D4C3C2C20 /* Pods-GH Viewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GH Viewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GH Viewer/Pods-GH Viewer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D483E1711D7B651700FCD614 /* GHUsersViewController.swift */,
+				D483E18C1D7CC57100FCD614 /* GHUserTableViewCell.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				D483E1781D7B651700FCD614 /* GHUsersViewController.swift in Sources */,
 				D483E1771D7B651700FCD614 /* AppDelegate.swift in Sources */,
 				D483E1861D7B6D5000FCD614 /* GHKeys.swift in Sources */,
+				D483E18D1D7CC57100FCD614 /* GHUserTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

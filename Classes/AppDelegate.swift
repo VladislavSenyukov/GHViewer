@@ -15,7 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        if let usersVC = (window?.rootViewController as! UINavigationController).topViewController as? GHUsersViewController {
+            usersVC.title = "Users"
+            usersVC.url = "https://api.github.com/users"
+        }
         return true
     }
 

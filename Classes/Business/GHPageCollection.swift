@@ -37,6 +37,14 @@ class GHPageCollection<T:GHDeserializable> {
         load()
     }
     
+    var count: Int {
+        return objects.count
+    }
+    
+    subscript(index: Int) -> T {
+        return objects[index]
+    }
+    
     func load() {
         if !loading {
             loadNext({ (error) in
