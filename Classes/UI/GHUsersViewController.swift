@@ -18,6 +18,7 @@ class GHUsersViewController: UIViewController, GHPageCollectionDelegate, UITable
             }
         }
     }
+    var followers = false
     
     @IBOutlet var tableView: UITableView?
     @IBOutlet var spinner: UIActivityIndicatorView?
@@ -25,13 +26,30 @@ class GHUsersViewController: UIViewController, GHPageCollectionDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         if url != nil {
-            collection = GHGitUserPageCollection(url: url!)
+            collection = GHGitUserPageCollection(url: url!, offsetById: !followers)
             spinner?.startAnimating()
         }
     }
 
     func pageCollectionDidLoadPage() {
-        tableView?.reloadData()
+        let count = collection!.count
+        let lastLoadedCount = collection!.lastLoadedCount
+        if lastLoadedCount > 0 {
+            var indexPaths = [NSIndexPath]()
+            for i in count-lastLoadedCount..<count {
+                indexPaths.append(NSIndexPath(forRow: i, inSection: 0))
+            }
+            tableView?.beginUpdates()
+            tableView?.insertRowsAtIndexPaths(indexPaths, withRowAnimation: .Bottom)
+            tableView?.endUpdates()
+        }
+        spinner?.stopAnimating()
+    }
+    
+    func pageCollectionDidFail(error: NSError) {
+        let alert = UIAlertController(title: "", message: error.localizedDescription, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: nil))
+        presentViewController(alert, animated: true, completion: nil)
         spinner?.stopAnimating()
     }
     
@@ -59,8 +77,15 @@ class GHUsersViewController: UIViewController, GHPageCollectionDelegate, UITable
         let nextVC = storyboard.instantiateViewControllerWithIdentifier("GHUsersViewController") as! GHUsersViewController
         nextVC.title = title
         nextVC.url = url
+        nextVC.followers = true
         navigationController?.pushViewController(nextVC, animated: true)
     }
     
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == collection!.count-1 {
+            spinner?.startAnimating()
+            collection?.load()
+        }
+    }
+    
 }
-

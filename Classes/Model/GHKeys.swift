@@ -13,6 +13,7 @@ enum GHKeys : String {
     case avatar_url
     case followers_url
     case per_page
+    case page
     case since
     
     var string : String {

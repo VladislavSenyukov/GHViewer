@@ -43,6 +43,11 @@ class GHUserTableViewCell: UITableViewCell, GHIdentifiable {
         }
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        profileImageView?.image = nil
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         let side = profileImageView!.frame.width/2.0

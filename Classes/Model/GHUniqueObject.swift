@@ -11,7 +11,7 @@ protocol GHDeserializable {
 }
 
 class GHUniqueObject: GHDeserializable {
-    var id: String
+    var id: UInt64
     
     required init?(jsonDic: [String : AnyObject]) {
         guard
@@ -19,6 +19,6 @@ class GHUniqueObject: GHDeserializable {
         else {
                 return nil
         }
-        self.id = id.stringValue
+        self.id = id.unsignedLongLongValue
     }
 }
