@@ -22,6 +22,7 @@ class GHUsersViewController: UIViewController, GHPageCollectionDelegate, UITable
     
     @IBOutlet var tableView: UITableView?
     @IBOutlet var spinner: UIActivityIndicatorView?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,17 @@ class GHUsersViewController: UIViewController, GHPageCollectionDelegate, UITable
             spinner?.startAnimating()
         }
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.trackScrollView(tableView!)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.untrack()
+    }
+    
     func pageCollectionDidLoadPage() {
         let count = collection!.count
         let lastLoadedCount = collection!.lastLoadedCount

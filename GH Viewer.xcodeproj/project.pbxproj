@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D46E81611D90961300A781C7 /* NavBarScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46E81601D90961300A781C7 /* NavBarScroller.swift */; };
 		D483E1771D7B651700FCD614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E16D1D7B651700FCD614 /* AppDelegate.swift */; };
 		D483E1781D7B651700FCD614 /* GHUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483E1711D7B651700FCD614 /* GHUsersViewController.swift */; };
 		D483E1791D7B651700FCD614 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D483E1731D7B651700FCD614 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		B71F07135FE9E5CCE4B9ABBC /* Pods-GH Viewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GH Viewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GH Viewer/Pods-GH Viewer.release.xcconfig"; sourceTree = "<group>"; };
+		D46E81601D90961300A781C7 /* NavBarScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarScroller.swift; sourceTree = "<group>"; };
 		D483E1441D7B628500FCD614 /* GH Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GH Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D483E16D1D7B651700FCD614 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D483E1711D7B651700FCD614 /* GHUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GHUsersViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			children = (
 				D483E1711D7B651700FCD614 /* GHUsersViewController.swift */,
 				D483E18C1D7CC57100FCD614 /* GHUserTableViewCell.swift */,
+				D46E81601D90961300A781C7 /* NavBarScroller.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				D483E1771D7B651700FCD614 /* AppDelegate.swift in Sources */,
 				D483E1861D7B6D5000FCD614 /* GHKeys.swift in Sources */,
 				D483E18D1D7CC57100FCD614 /* GHUserTableViewCell.swift in Sources */,
+				D46E81611D90961300A781C7 /* NavBarScroller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
